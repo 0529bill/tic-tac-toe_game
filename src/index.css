@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 30px;
+}
+
+.game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.game .game-board {
+  margin: 20% auto;
+  height: 450px;
+}
+
+.game .game-board .board-row {
+  height: 30px;
+}
+
+.game .game-board .board-row .square {
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  border: 1px solid #999;
+  font-weight: bold;
+  float: left;
+}
+
+.game .game-board .board-row .square:focus {
+  outline: none;
+}
+
+.game .game-info {
+  margin-top: 20%;
+  margin-right: 10%;
+}
+
+@media (max-width: 700px) {
+  .game {
+    display: block;
+  }
+  .game .game-board {
+    margin: 5% auto;
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .game .game-info {
+    margin-top: 5%;
+    margin: 5% auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */
